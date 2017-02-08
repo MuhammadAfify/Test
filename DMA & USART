@@ -25,7 +25,7 @@ void DMA_Config(void)
   DMA_DeInit(DMA2_Stream4);
   
   DMA_InitStructure.DMA_BufferSize=4;
-  DMA_InitStructure.DMA_Channel=DMA_Channel_4;
+  DMA_InitStructure.DMA_Channel=DMA_Channel_5;
   DMA_InitStructure.DMA_DIR=DMA_DIR_MemoryToPeripheral;
   DMA_InitStructure.DMA_Memory0BaseAddr=(uint32_t)SRC_Buffer;
   DMA_InitStructure.DMA_MemoryBurst=DMA_MemoryBurst_Single;
@@ -33,7 +33,7 @@ void DMA_Config(void)
   DMA_InitStructure.DMA_MemoryInc=DMA_MemoryInc_Enable;
   DMA_InitStructure.DMA_Mode=DMA_Mode_Normal;
   DMA_InitStructure.DMA_PeripheralBaseAddr=((uint32_t)UART4 + 0x04);
-  DMA_InitStructure.DMA_Priority=DMA_Priority_High;
+  DMA_InitStructure.DMA_Priority=DMA_Priority_Low;
   DMA_InitStructure.DMA_PeripheralBurst=DMA_PeripheralBurst_Single;
   DMA_InitStructure.DMA_PeripheralDataSize=DMA_PeripheralDataSize_Byte;
   DMA_InitStructure.DMA_PeripheralInc=DMA_PeripheralInc_Enable;
